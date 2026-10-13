@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jerah Umis | Student Portfolio</title>
+  <meta name="description" content="Student portfolio of [YOUR NAME]: about me, skills, projects, latest GitHub repositories and contact details.">
+
+  <!-- Fonts: one for headings, one for body text (system fonts are used if these cannot load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Go to top of page">My Portfolio</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm Jerah M. Umis</h1>
+          <p class="tagline">Student Developer | Future IT Professional</p>
+          <p class="intro">
+            Just a simple girl with a big dream.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Put your photo at images/profile.jpg (under 500 KB) -->
+          <img src= "C:\Users\Acer\OneDrive\Pictures\Mhine\MyPhoto.jpeg"  width="320" height="320">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Biography</h3>
+            <p>My name is Jerah M. Umis. I was born on June 10, 2007 in Tigue Paquet, Kasibu, Nueva Vizcaya. I am currently a student at Nueva Vizcaya State University- Bambang Campus, taking up Bachelor of Science in Information Technology.
+              I am a simple, hardworking, and determined person, I enjoy spending time with my family and friends, listening music, watching k-dramas, and dancing. Life is not always easy, but the challenges I face help me become stronger and more responsible.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Education</h3>
+            <ul class="plain-list">
+              <li><strong>School</strong></li>
+              <li> Primary: Paquet Elementary School</li>
+              <li> Secondary: Kongkong Valley National High School</li>
+              <li>Tertiary: Nueva Vizcaya State University- Bambang Campus</li>
+              <li><strong>Program:</strong> Bachelor of Science in Information Technology</li>
+              <li><strong>Expected graduation:</strong> 2028-2029</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Career goals</h3>
+            <p>To learn and apply technology to solve problems, improve systems, and help make people's lives easier.</p>
+          </article>
+          <article class="card">
+            <h3>Interests</h3>
+            <ul class="plain-list">
+              <li>Music</li>
+              <li>K-drama</li>
+              <li>Travel</li>
+              <li>Dancing</li>
+              <li>To learn more on programming</li>
+              <li>Web development</li>
+              <li>Technology</li>
+              <li>Learning new skills</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Achievements</h3>
+            <li> Neo-Ethnic Champion(2025)</li>
+            <li> Cheerdance Champion(2025)</li>
+            <li> Bayle sa Kalye 2nd Place (2026)</li>
+            <li> Cheerdance Champion(2026)</li> 
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Technical skills</h3>
+            <ul class="badges">
+              <li>Web development</li>
+              <li>Basic programming</li>
+              <li>Database fundamentals</li> 
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Programming languages</h3>
+            <ul class="badges">
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools &amp; technologies</h3>
+            <ul class="badges">
+              <li>VS Code</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Soft skills</h3>
+            <ul class="badges">
+              <li>Communication</li>
+              <li>Teamwork</li>
+              <li>Time management</li>
+              <li>Adaptability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Cards are generated by js/script.js from data/projects.json -->
+        <div id="projectsGrid" class="projects-grid" aria-live="polite">
+          <p class="status-message">Loading projects...</p>
+        </div>
+
+        <h3 class="subheading">Latest GitHub repositories</h3>
+        <!-- Filled by js/script.js using the GitHub REST API -->
+        <ul id="repoList" class="repo-list" aria-live="polite">
+          <li class="status-message">Loading repositories...</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+
+          <div class="card">
+            <h3>Get in touch</h3>
+            <ul class="plain-list">
+              <li><strong>Email:</strong> <a href="mailto:your.email@example.com">umisjerah10@gmail.com</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">umisjerah.github.com</a></li>
+          </div>
+
+          <form class="card" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name">
+              <span class="error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <span class="error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <span class="error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-success" id="formSuccess" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Jerah M. Umis &ndash; Student Portfolio</p>
+      <p>
+        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Personal feature: Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
